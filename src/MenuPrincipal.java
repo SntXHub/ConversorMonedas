@@ -20,7 +20,7 @@ public class MenuPrincipal {
             switch (opcion) {
                 case 1 -> convertirMonedas(conversor, scanner);
                 case 2 -> mostrarMonedas(conversor);
-                case 3 -> actualizarTasas(conversor); // Llamada al método para actualizar tasas
+                case 3 -> actualizarTasas(conversor); // Llamada al metodo para actualizar tasas
                 case 4 -> System.out.println("¡Gracias por usar el Conversor de Monedas!");
                 default -> System.out.println("Opción no válida. Intente nuevamente.");
             }
@@ -65,7 +65,7 @@ public class MenuPrincipal {
         }
     }
 
-    // Método para actualizar las tasas de conversión
+    // Mwtodo para actualizar las tasas de conversión
     private static void actualizarTasas(ConversorMonedas conversor) {
         System.out.println("\nActualizando tasas de conversión...");
         conversor.actualizarTasasEnTiempoReal();

@@ -10,7 +10,7 @@ public class ServicioConversion {
     // Tu clave de API de ExchangeRate
     private static final String API_KEY = "67b3230ce826faae30e684bf";  // Reemplaza con tu clave real
 
-    // Método para obtener la tasa de conversión entre dos monedas
+    // Metodo para obtener la tasa de conversión entre dos monedas
     public static double obtenerTasaConversion(String monedaOrigen, String monedaDestino) {
         try {
             // Formar la URL dinámicamente
