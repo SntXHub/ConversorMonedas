@@ -56,7 +56,7 @@ public class MenuPrincipal {
                     System.out.println("Por favor, ingrese un número positivo.");
                 }
             } else { // Si la entrada no es un número
-                System.out.println("Entrada inválida. Ingrese nuevamente un número válido.");
+                System.out.println("Error de entrada. Debe ingresar un valor correcto.");
                 scanner.next(); // Descarta el texto inválido
             }
         }
