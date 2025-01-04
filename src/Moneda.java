@@ -1,8 +1,8 @@
 public class Moneda {
 
-    private String nombre;  // Nombre de la moneda (por ejemplo, "Dólar estadounidense")
-    private String codigo;  // Código de la moneda (por ejemplo, "USD")
-    private double tasaConversion;  // Tasa de conversión respecto a una base (por ejemplo, USD)
+    private String nombre;  // Nombre de la moneda
+    private String codigo;  // Código de la moneda
+    private double tasaConversion;  // Tasa de conversión
 
     // Constructor
     public Moneda(String nombre, String codigo, double tasaConversion) {

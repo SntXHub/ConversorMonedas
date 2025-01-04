@@ -3,14 +3,14 @@ import java.util.List;
 
 public class ConversorMonedas {
 
-    private final List<Moneda> monedasDisponibles = new ArrayList<>(); // Lista de monedas disponibles para conversión
+    private final List<Moneda> monedasDisponibles = new ArrayList<>();
 
     // Constructor
     public ConversorMonedas() {
         cargarMonedasIniciales();
     }
 
-    // Metodo para cargar las monedas disponibles
+    // Cargar las monedas disponibles
     private void cargarMonedasIniciales() {
         monedasDisponibles.add(new Moneda("Peso Argentino", "ARS", 365.0));
         monedasDisponibles.add(new Moneda("Real Brasileño", "BRL", 5.2));
@@ -22,7 +22,7 @@ public class ConversorMonedas {
         monedasDisponibles.add(new Moneda("Yuan Chino", "CNY", 7.1));
     }
 
-    // Metodo para convertir entre dos monedas
+    // Convertir entre dos monedas
     public double convertir(double cantidad, Moneda origen, Moneda destino) {
         if (origen == null || destino == null) {
             throw new IllegalArgumentException("Las monedas de origen y destino no pueden ser nulas.");
@@ -30,12 +30,12 @@ public class ConversorMonedas {
         return cantidad * (destino.getTasaConversion() / origen.getTasaConversion());
     }
 
-    // Metodo para obtener la lista de monedas disponibles
+    // Obtener lista de monedas disponibles
     public List<Moneda> getMonedasDisponibles() {
         return monedasDisponibles;
     }
 
-    // Metodo para tasas de conversión en tiempo real
+    // Tasas de conversión en tiempo real
     public void actualizarTasasEnTiempoReal() {
         for (Moneda moneda : monedasDisponibles) {
             if (!moneda.getCodigo().equals("USD")) { // No actualizamos la base (USD)
